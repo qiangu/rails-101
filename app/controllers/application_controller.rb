@@ -1,3 +1,6 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  
+  def index
+   flash[:warning] = "这是 warning 信息！"
+  end
 end
